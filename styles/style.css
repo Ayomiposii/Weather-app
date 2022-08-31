@@ -23,12 +23,12 @@ input {
   margin: 15px;
   margin-right: 100px;
 }
-footer { 
+footer {
   margin: 15px;
   padding: 10px;
   background-color: rgba(128, 128, 128, 0.202);
   border-radius: 10px;
-  color: #171515 ;
+  color: #171515;
 }
 .loca {
   text-align: right;
