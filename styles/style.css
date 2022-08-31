@@ -28,7 +28,7 @@ footer {
   padding: 10px;
   background-color: rgba(128, 128, 128, 0.202);
   border-radius: 10px;
-  color: #9a11c1 ;
+  color: #171515 ;
 }
 .loca {
   text-align: right;
@@ -65,9 +65,15 @@ footer {
   color: gray;
   font-weight: 40px;
 }
+.git {
+  margin: 5px;
+  margin-left: 0px;
+}
 .git_logo {
   width: 20px;
-  border-radius: 20px;
+  padding-bottom: 5px;
+  border-radius: 110%;
+  
 }
 @media (max-width: 750px) {
 }
