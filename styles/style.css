@@ -6,9 +6,9 @@ small {
   font-size: 20px;
 }
 
-button {
-  margin: 0px 20px;
-}
+/* button {
+   margin: 0px 20px; 
+} */
 a {
   text-decoration: none;
   color: black;
@@ -16,13 +16,13 @@ a {
 a:active {
   color: blue;
 }
-input {
+/* input {
   padding: 12px;
   max-width: 100vh;
   border-radius: 25px solid white;
   margin: 15px;
-  margin-right: 100px;
-}
+  margin-right: 100px; 
+} */
 footer {
   margin: 55px 40px;
   padding: 10px;

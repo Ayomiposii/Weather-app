@@ -23,14 +23,18 @@
       <nav class="navbar bg-light">
         <div>
           <form action="" id="search-form" role="search">
-            <input
+           <div class="row">
+            <div class="col-6">
+               <input
               type="text"
               id="search"
               type="search"
               placeholder="Enter city here...."
               autocomplete="off"
             />
-            <button
+            </div>
+            <div class="col-3 ">
+              <button
               class="btn btn-outline-primary"
               id="search-buuton"
               type="submit"
@@ -38,7 +42,9 @@
             >
               Search
             </button>
-            <button
+            </div>
+            <div class="col-3 ">
+              <button
               class="btn btn-outline-danger"
               id="current-location-button"
               type="button"
@@ -46,6 +52,8 @@
             >
               Current
             </button>
+            </div>
+           </div>
           </form>
         </div>
       </nav>
