@@ -30,7 +30,7 @@ footer {
   border: 2px solid rgb(133, 130, 130);
   border-radius: 20px;
 }
-.nav-bar{
+.nav-bar {
   background-color: rgba(212, 212, 212, 0.716);
   margin: -10px;
   padding: 20px;
@@ -49,6 +49,8 @@ footer {
 }
 .button {
   padding: 5px 20px;
+  justify-content: space-evenly;
+  display: flex;
 }
 .location h1 {
   color: red;
@@ -56,7 +58,9 @@ footer {
 .location h3 {
   color: rgb(254, 81, 81);
 }
-
+.icon {
+  font-size: 60px;
+}
 .weather {
   background-color: rgba(212, 212, 212, 0.716);
   padding: 20px;
@@ -85,6 +89,7 @@ footer {
 .weather_sub {
   color: gray;
   font-weight: 40px;
+  bottom: ;
 }
 .git {
   margin: 5px;
@@ -102,5 +107,48 @@ footer {
 .git-link :visited {
   color: red;
 }
+.total-temp {
+  display: flex;
+}
 @media (max-width: 750px) {
+  .temp {
+    font-size: 80px;
+  }
+  celsius {
+    font-size: 15px;
+  }
+  .weather {
+    padding-left: 0px;
+  }
+  .search-box {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    text-align: center;
+  }
+  li {
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  p {
+    font-size: 35px;
+  }
+  .location h3 {
+    font-size: 40px;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+  .button {
+    margin-left: 2.8rem;
+    margin-top: 0.5rem;
+  }
+  .temp {
+    margin-left: 6.5rem;
+  }
 }

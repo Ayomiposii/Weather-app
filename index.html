@@ -20,54 +20,59 @@
   </head>
   <body>
     <div class="container" id="whole">
-        <div class="nav-bar">
-          <form>
-            <div class="row ">
-              <div class="col-6">
-                <input
-                  type="text"
-                  id="search"
-                  class="search-box"
-                  placeholder="Enter city here...."
-                  autocomplete="off"
-                />
-              </div>
-              <div class="col-1 button">
-                <input
-                  class="btn btn-outline-primary"
-                  id="search-button"
-                  type="submit"
-                  value="Search"
-                />
-              </div>
-              <div class="col-1 button">
-                <input
-                  class="btn btn-outline-danger"
-                  id="current-location-button"
-                  type="submit"
-                  value="Current"
-                />
-              </div>
+      <div class="nav-bar">
+        <form>
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="text"
+                id="search"
+                class="search-box"
+                placeholder="Enter city here...."
+                autocomplete="off"
+              />
             </div>
-          </form>
-        </div>
-      
+            <div class="col-3 button">
+              <input
+                class="btn btn-outline-primary"
+                id="search-button"
+                type="submit"
+                value="Search"
+              />
+            </div>
+            <div class="col-3 button">
+              <input
+                class="btn btn-outline-danger"
+                id="current-location-button"
+                type="submit"
+                value="Current"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
 
-      <div class="row">
+      <div class="row hh">
         <div class="location col-6">
           <h1 id="city"></h1>
           <h3></h3>
           <p id="temperature-description">Cloudy</p>
         </div>
+        <div class="col-6">
+          <span class="icon"><i>🌧️</i></span>
+        </div>
       </div>
       <div class="row weather">
         <div class="col-6">
-          <div>
-            <span class="temp" id="temperature">28</span>
-            <span class="degrees">
-              <a href="#" id="celsius-convert" class="celsius">°C</a>
-              <!-- <a href="#" id="fahrenheit-convert">°F</a> -->
-            </span>
+          <div class="total-temp">
+            <!-- <i>🌧️</i> -->
+            <div>
+              <span class="temp" id="temperature">28</span>
+              <span class="degrees">
+                <a href="#" id="celsius-convert" class="celsius">°C</a>
+                <!-- <a href="#" id="fahrenheit-convert">°F</a> -->
+              </span>
+            </div>
           </div>
         </div>
         <div class="col-6 weather_sub">
