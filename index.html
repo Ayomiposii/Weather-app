@@ -22,38 +22,36 @@
     <div class="container" id="whole">
       <nav class="navbar bg-light">
         <div>
-          <form id="search-form" role="search">
-           <div class="row">
-            <div class="col-6">
-               <input
-              type="text"
-              id="search"
-              type="search"
-              placeholder="Enter city here...."
-              autocomplete="off"
-            />
+          <form role="search">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  id="search"
+                  type="search"
+                  placeholder="Enter city here...."
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  class="btn btn-outline-primary"
+                  id="search-button"
+                  type="submit"
+                  id="button"
+                  value="Search"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  class="btn btn-outline-danger"
+                  id="current-location-button"
+                  type="submit"
+                  id="button"
+                  value="Current"
+                />
+              </div>
             </div>
-            <div class="col-3 ">
-              <button
-              class="btn btn-outline-primary"
-              id="search-button"
-              type="submit"
-              id="button"
-            >
-              Search
-            </button>
-            </div>
-            <div class="col-3 ">
-              <button
-              class="btn btn-outline-danger"
-              id="current-location-button"
-              type="submit"
-              id="button"
-            >
-              Current
-            </button>
-            </div>
-           </div>
           </form>
         </div>
       </nav>
@@ -83,7 +81,7 @@
         </div>
       </div>
 
-      <!-- <div class="container">
+      <!-- 
         <div class="row weekday">
           <div class="col">
             Thu
@@ -150,13 +148,13 @@
           </div>
         </div> 
       </div>-->
-    <footer>
-      <img src="git logo.png" alt="logo" class="git_logo" />
-      <span class="git"><strong>GitHub:</strong></span>
-      <a href="https://ayomiposii.github.io/Weather-app/" class="git-link"
-        >Weather App</a
-      >
-    </footer>
+      <footer>
+        <img src="git logo.png" alt="logo" class="git_logo" />
+        <span class="git"><strong>GitHub:</strong></span>
+        <a href="https://ayomiposii.github.io/Weather-app/" class="git-link"
+          >Weather App</a
+        >
+      </footer>
     </div>
     <script src="styles/app.js"></script>
   </body>
