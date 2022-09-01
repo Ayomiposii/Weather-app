@@ -16,13 +16,6 @@ a {
 a:active {
   color: blue;
 }
-input {
-  padding: 12px;
-  max-width: 100vh;
-  border-radius: 25px solid white;
-  margin: 15px;
-  margin-right: 100px;
-}
 footer {
   margin-top: 40px;
   padding: 10px;
@@ -36,6 +29,17 @@ footer {
   padding: 50px;
   border: 2px solid rgb(133, 130, 130);
   border-radius: 20px;
+}
+.search-box {
+  background: rgba(133, 130, 130, 0.215);
+  border: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  color: red;
+  font-size: 16px;
+  height: 50px;
+  
 }
 .location h1 {
   color: red;
