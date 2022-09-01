@@ -89,7 +89,6 @@ footer {
 .weather_sub {
   color: gray;
   font-weight: 40px;
-  bottom: ;
 }
 .git {
   margin: 5px;
@@ -150,5 +149,13 @@ footer {
   }
   .temp {
     margin-left: 6.5rem;
+  }
+}
+@media (max-width: 410px) {
+  .temp {
+    margin-left: 6rem
+  }
+  li {
+    display: block;
   }
 }
