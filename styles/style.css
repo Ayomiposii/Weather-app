@@ -4,15 +4,18 @@
   padding: 50px;
   border: 2px solid rgb(133, 130, 130);
   border-radius: 20px;
-  
+}
+p {
+  font-size: 25px;
+  font-weight: 400;
 }
 small {
   font-size: 20px;
 }
 
-/* button {
-   margin: 0px 20px; 
-} */
+button {
+  margin: 0px 20px;
+}
 a {
   text-decoration: none;
   color: black;
@@ -20,15 +23,15 @@ a {
 a:active {
   color: blue;
 }
-/* input {
+input {
   padding: 12px;
   max-width: 100vh;
   border-radius: 25px solid white;
   margin: 15px;
-  margin-right: 100px; 
-} */
+  margin-right: 100px;
+}
 footer {
-  margin-top:40px;
+  margin-top: 40px;
   padding: 10px;
   background-color: rgba(128, 128, 128, 0.202);
   border-radius: 10px;
@@ -46,16 +49,23 @@ footer {
 .location h3 {
   color: rgb(248, 112, 112);
 }
+
 .weather {
   background-color: rgba(212, 212, 212, 0.716);
-  max-width: 100%;
   padding: 20px;
-  margin-bottom: 20px;
-  margin: 0;
   border-radius: 10px;
 }
-.weather_head {
-  font-size: 50px;
+.temp {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 1;
+}
+.celsius {
+  font-size: 25px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -34px;
 }
 .degrees {
   font-size: 15px;
