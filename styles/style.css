@@ -153,7 +153,7 @@ footer {
 }
 @media (max-width: 410px) {
   .temp {
-    margin-left: 6rem
+    margin-left: 5rem
   }
   li {
     display: block;
