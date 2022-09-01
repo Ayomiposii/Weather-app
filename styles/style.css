@@ -1,7 +1,11 @@
-body {
-  margin: 20px;
+#whole {
+  display: block;
+  margin: 50px auto;
+  padding: 50px;
+  border: 2px solid rgb(133, 130, 130);
+  border-radius: 20px;
+  
 }
-
 small {
   font-size: 20px;
 }
@@ -24,7 +28,7 @@ a:active {
   margin-right: 100px; 
 } */
 footer {
-  margin: 55px 40px;
+  margin-top:40px;
   padding: 10px;
   background-color: rgba(128, 128, 128, 0.202);
   border-radius: 10px;
