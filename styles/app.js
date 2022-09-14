@@ -51,7 +51,6 @@ form.addEventListener("submit", submit);
 
 // For Temperature
 
-
 function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -67,6 +66,12 @@ function showWeather(response) {
 
   document.querySelector("#temperature-description").innerHTML =
     response.data.weather[0].main;
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 function searchForCity() {
   let apiKey = "ade2c941f456758f1ba37300092d4328";
@@ -75,7 +80,6 @@ function searchForCity() {
   axios.get(apiUrl).then(showWeather);
 }
 
-
 function searchLocation(position) {
   navigator.geolocation.getCurrentPosition(searchLocation);
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
@@ -83,7 +87,6 @@ function searchLocation(position) {
 
   axios.get(apiUrl).then(showWeather);
 }
-
 
 let searchForm = document.querySelector("form");
 searchForm.addEventListener("submit", searchForCity);
