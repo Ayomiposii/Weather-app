@@ -188,7 +188,7 @@ footer {
     font-size: 70px;
   }
 }
-@media (max-width: 307px) {
+@media (max-width: 308px) {
    .temp {
     margin-left: 2rem;
     font-size: 70px;
@@ -196,7 +196,7 @@ footer {
 }
 @media (max-width: 291px) {
    .temp {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     font-size: 70px;
   }
 }
