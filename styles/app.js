@@ -58,9 +58,9 @@ function showWeather(response) {
 } // for converting degrees
 function convertFarenheit(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
+  let temperatureElement = document.querySelector("#temperature");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
@@ -72,17 +72,13 @@ function convertCelsius(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-let celsiusTemperature = null
-let degrees = document.querySelector("#celsius-convert");
-degrees.addEventListener("click", convertCelsius);
-let degree = document.querySelector("#fahrenheit-convert");
-degree.addEventListener("click", convertFarenheit);
+let celsiusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-convert");
 fahrenheitLink.addEventListener("click", convertFarenheit);
 
 let celsiusLink = document.querySelector("#celsius-convert");
-fahrenheitLink.addEventListener("click", convertCelsius);
+celsiusLink.addEventListener("click", convertCelsius);
 
 // For Temperature
 function searchForCity() {
