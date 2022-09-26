@@ -154,9 +154,49 @@ footer {
 }
 @media (max-width: 410px) {
   .temp {
-    margin-left: 5rem
+    margin-left: 4rem
   }
   li {
     display: block;
+  }
+  #city {
+    font-size: 50px;
+  }
+}
+@media (max-width: 350px) {
+  .temp {
+    margin-left: 3.5rem;
+    font-size: 70px;
+  }
+.degrees {
+  font-size: 20px;
+}
+  #city {
+    font-size: 50px;
+  }
+  .button
+   {
+    margin-left: 35px;
+   }
+   #temperature-description {
+    font-size: 30px;
+   }
+}
+@media (max-width: 315px) {
+   .temp {
+    margin-left: 3rem;
+    font-size: 70px;
+  }
+}
+@media (max-width: 307px) {
+   .temp {
+    margin-left: 2rem;
+    font-size: 70px;
+  }
+}
+@media (max-width: 291px) {
+   .temp {
+    margin-left: 1rem;
+    font-size: 70px;
   }
 }
