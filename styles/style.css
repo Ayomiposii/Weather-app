@@ -80,7 +80,13 @@ footer {
   line-height: 1;
   top: -34px;
 }
-
+.total-temp .celsius {
+  color: rgb(33,33,33);
+  cursor: default;
+}
+.total-temp .celsuis:hover {
+  text-decoration: none;
+}
 .weather_sub {
   color: gray;
   font-weight: 40px;
