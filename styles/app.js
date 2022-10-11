@@ -20,6 +20,44 @@ let today = document.querySelector("h3");
 
 today.innerHTML = `${day} ${hours}:${minutes}`;
 
+function displayForecast(response) {
+  console.log(response.data.daily);
+
+  let forecastElement = documnet.querySelector("#forecast");
+
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastElement +
+      `
+     <div class="col-2">
+            <div class="weather-forecast-date">${day}</div>
+
+            <img
+              src="http://openweathermap.org/img/wn/03d@2x.png"
+              alt=""
+              width="42"
+            />
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperature-max"> 28° </span>
+              <span class="weather-forecast-temperature-min">12°</span>
+            </div>
+          </div>
+    `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  let apiKey = "ade2c941f456758f1ba37300092d4328";
+  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?
+  lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+}
 // for city
 function submit(event) {
   event.preventDefault();
@@ -55,6 +93,8 @@ function showWeather(response) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+
+  getForecast(response.data.coord);
 } // for converting degrees
 function convertFarenheit(event) {
   event.preventDefault();
