@@ -216,3 +216,12 @@ footer {
     font-size: 70px;
   }
 }
+@media (max-width: 280px) {
+  .temp{
+    font-size: 60px;
+  }
+  .degrees{
+    font-size: 18px;
+    
+  }
+}
