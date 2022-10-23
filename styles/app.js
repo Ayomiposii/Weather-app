@@ -38,6 +38,7 @@ function displayForecast(response) {
   let days = ["Wed", "Thurs", "Fri", "Sat", "Sun", "Mon"];
   let forecast = response.data.daily;
   forecast.forEach(function (forecastDay, index) {
+    let forecastDayTempMax = `(${forecastDay.temp.max} - 32) * 5/9`;
     if (index < 6) {
       forecastHTML =
         forecastHTML +
@@ -66,7 +67,7 @@ function displayForecast(response) {
     `;
     }
   });
-  let forecastDayTempMax = `(${forecastDay.temp.max} - 32) * 5/9`;
+
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
